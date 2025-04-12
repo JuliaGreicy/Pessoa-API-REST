@@ -1,47 +1,48 @@
-
+Nome da dupla: Julia Greicy Souza de Lima e Rubia 
 ---
 
-# API de Gerenciamento de Pessoas
+API para Cadastro e Consulta de Pessoas
+📄 Visão Geral
+Esta API REST foi desenvolvida com foco na prática de conceitos fundamentais do desenvolvimento backend com Spring Boot, além da integração com um banco de dados relacional MySQL.
+O sistema simula o gerenciamento de pessoas em um contexto acadêmico, permitindo operações básicas de cadastro e consulta.
 
-## 📄 Descrição do Projeto
+A aplicação trabalha com apenas uma entidade principal: Pessoa, que contém os atributos:
 
-Esta aplicação consiste em uma API REST para o sistema de gerenciamento de pessoas de uma universidade. Tem como objetivo aplicar os conhecimentos de desenvolvimento com Spring Boot e persistência de dados com MySQL.
+nome
 
-A única entidade do sistema é **Pessoa**, que possui os seguintes atributos:
+cpf
 
-- nome  
-- cpf  
-- idade  
+idade
 
----
+🛠️ Tecnologias e Ferramentas
+Java
 
-## 🛠️ Tecnologias Utilizadas
+Spring Boot (Web, Data JPA)
 
-- Java  
-- Spring Boot (Spring Web, Spring Data JPA)  
-- MySQL  
-- Lombok  
-- Maven  
+MySQL
 
----
+Lombok
 
-## 🗂️ Estrutura do Projeto
+Maven
 
-O projeto segue a seguinte estrutura:
+🗂️ Organização do Projeto
+A estrutura do projeto está distribuída da seguinte forma:
 
-- **Entity:** Classe `Pessoa`, que representa a tabela no banco de dados.  
-- **DTO:** Classe `PessoaDTO`, para transferência de dados da API.  
-- **Repositório:** Interface `PessoaRepository`, que estende `JpaRepository`.  
-- **Controlador:** Classe `PessoaController`, que expõe os endpoints da API.  
+Entity: A classe Pessoa representa a entidade no banco de dados.
 
----
+DTO: A classe PessoaDTO é usada para trafegar dados entre o sistema e o cliente.
 
-## 🔗 Endpoints da API
+Repository: Interface PessoaRepository, responsável pelas operações com o banco de dados, estendendo JpaRepository.
 
-- `POST /api/pessoas`  
-  Cria uma nova pessoa no banco de dados.
+Controller: A classe PessoaController contém os endpoints responsáveis pelas requisições da API.
 
-- `GET /api/pessoas/{id}`  
-  Retorna a pessoa com o ID informado.
+🔗 Funcionalidades e Endpoints
+POST /api/pessoas
+Cadastra uma nova pessoa no sistema.
+
+GET /api/pessoas/{id}
+Recupera os dados de uma pessoa específica com base no ID informado.
+
+
 
 ---
