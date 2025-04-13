@@ -75,17 +75,5 @@ Recupera os dados de uma pessoa com base no ID informado.
 
 ---
 
-## 🚀 Como Executar o Projeto
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   ```
-2. Configure o arquivo `application.properties` com os dados do seu banco MySQL.  
-3. Execute o projeto via sua IDE ou com o Maven:
-   ```bash
-   ./mvnw spring-boot:run
-   ```
-
----
 
